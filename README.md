@@ -81,7 +81,7 @@ outputs/<session-time>/
 - 화자 추정 내용이 회의록 입력에 포함되지 않는지 확인
 - 네이티브 보조 프로그램 컴파일 및 로컬 코드 서명 검증
 
-실제 장치, macOS 권한, 장시간 회의 및 각 AI CLI와의 통합 동작은 별도 확인이 필요합니다. 아이콘을 다시 만들려면 별도로 Pillow를 설치하고 `create_icons.py`를 실행합니다.
+실제 장치, macOS 권한, 장시간 회의 및 각 AI CLI와의 통합 동작은 별도 확인이 필요합니다.
 
 ## 소스 구성
 
@@ -90,10 +90,8 @@ outputs/<session-time>/
 | `menu_app.py` | 메뉴바 UI, 녹음 및 회의록 처리 |
 | `audio_capture.py` | 네이티브 도구 실행과 오디오 믹싱 |
 | `capture_audio.swift` | ScreenCaptureKit 오디오 캡처 |
-| `app.py`, `static/` | 별도의 실험용 웹 UI |
 | `test_recording.py`, `test_capture.swift` | 합성 데이터 검사 |
-
-웹 UI는 `./venv/bin/python3 app.py`로 실행합니다. 메뉴바 앱과 녹음 경로가 다르며, 위의 네이티브 온라인 녹음 기능은 메뉴바 앱에 적용됩니다. 웹 UI는 인증 기능이 없는 로컬 실험용 서버이므로 외부에 서비스로 노출하지 마세요.
+| `assets/iconTemplate*.png` | 메뉴바 아이콘 |
 
 ## 공개 저장소에 포함하지 않는 파일
 

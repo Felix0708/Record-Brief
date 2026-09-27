@@ -20,12 +20,12 @@ if [ ! -d "venv" ]; then
     python3 -m venv venv
 fi
 
-echo "2/4. 필요한 핵심 패키지 설치 중 (FastAPI, Faster-Whisper, Rumps 등)..."
+echo "2/4. 필요한 핵심 패키지 설치 중 (Faster-Whisper, Rumps 등)..."
 ./venv/bin/pip install --upgrade pip --quiet
 ./venv/bin/pip install -r requirements.txt --quiet
 
 echo "3/4. 실행 스크립트 권한 부여 및 Mac 정식 앱(Record-Brief.app) 생성 중..."
-chmod +x start.sh Record-Brief.command autostart-enable.sh autostart-disable.sh install.sh Install.command 2>/dev/null || true
+chmod +x start.sh Record-Brief.command install.sh Install.command
 
 # macOS .app 번들 컴파일
 if command -v osacompile &> /dev/null; then

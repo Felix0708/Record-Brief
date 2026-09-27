@@ -4,29 +4,18 @@
 !/.gitignore
 !/README.md
 !/requirements.txt
-!/app.py
 !/menu_app.py
 !/audio_capture.py
 !/capture_audio.swift
 !/test_recording.py
 !/test_capture.swift
-!/create_icons.py
-!/generate_icon.py
 !/start.sh
 !/install.sh
-!/autostart-enable.sh
-!/autostart-disable.sh
 !/Install.command
 !/Record-Brief.command
-!/static/
-!/static/index.html
-!/static/app.js
-!/static/style.css
 !/assets/
 !/assets/iconTemplate.png
 !/assets/iconTemplate@2x.png
-!/assets/RecordBrief.icns
-!/assets/app_icon_1024.png
 
 # Intentionally private: outputs/, work/, venv/, *.app/, caches, logs,
 # quota_cache.json, .env files, session files, recordings and transcripts.
